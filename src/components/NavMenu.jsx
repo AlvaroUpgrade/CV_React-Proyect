@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
+import { Context } from "../shared/Contexts/Context";
 import "./NavMenu.scss";
 
 const NavMenu = ({ personalData }) => {
+  const { setArticle } = useContext(Context);
+
   return (
     <div className="data">
       <div className="imageAndname">
@@ -11,11 +14,10 @@ const NavMenu = ({ personalData }) => {
         </h2>
       </div>
       <div className="options">
-        <button>Personal Data</button>
-        <button>Education</button>
-        <button>Experience</button>
-        <button>Habilities</button>
-        <button>Languages</button>
+        <button onClick={() => setArticle("Education")}>Education</button>
+        <button onClick={() => setArticle("Experience")}>Experience</button>
+        <button onClick={() => setArticle("Habilities")}>Habilities</button>
+        <button onClick={() => setArticle("Languages")}>Languages</button>
       </div>
     </div>
   );

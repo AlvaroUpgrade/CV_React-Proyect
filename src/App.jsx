@@ -6,9 +6,11 @@ import PersonalData from "./components/PersonalData";
 import About from "./components/About";
 import Education from "./components/Education";
 import Experience from "./components/Experience";
-import More from "./components/More";
 
 import { CV } from "./CV/CV";
+import { Context } from "./shared/Contexts/Context";
+import { useState } from "react";
+import Article from "./components/Article";
 
 const {
   personalData,
@@ -20,24 +22,27 @@ const {
 } = CV;
 
 function App() {
-  return (
-    <div className="App">
-      <header>
-        <nav>
-          <NavMenu personalData={personalData} />
-        </nav>
-      </header>
-      <main>
-        <aside>
-          <PersonalData personalData={personalData} />
-        </aside>
-        <article>
-          <Education />
-        </article>
-      </main>
-      <footer>footer</footer>
+  const [article, setArticle] = useState("About");
 
-      {/* <PersonalData personalData={personalData} />
+  return (
+    <Context.Provider value={{ article, setArticle }}>
+      <div className="App">
+        <header>
+          <nav>
+            <NavMenu personalData={personalData} />
+          </nav>
+        </header>
+        <main>
+          <aside>
+            <PersonalData personalData={personalData} />
+          </aside>
+          <article>
+            <Article />
+          </article>
+        </main>
+        <footer>footer</footer>
+
+        {/* <PersonalData personalData={personalData} />
       <About about={personalData.aboutMe} />
       <Education education={education} />
       <Experience experience={experience} />
@@ -46,7 +51,8 @@ function App() {
         habilities={habilities}
         volunteer={volunteer}
       /> */}
-    </div>
+      </div>
+    </Context.Provider>
   );
 }
 
