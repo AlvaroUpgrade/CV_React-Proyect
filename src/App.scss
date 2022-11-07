@@ -1,0 +1,49 @@
+$background: #282c34;
+
+html,
+body {
+  background-color: $background;
+  color: white;
+}
+.App {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  header {
+    height: 22vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    nav {
+      width: 95%;
+      height: 80%;
+      border-bottom: 2px solid #202329;
+    }
+  }
+
+  main {
+    background-color: $background;
+    display: flex;
+    height: 100%;
+
+    aside {
+      background-color: $background;
+      height: 100%;
+      width: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    article {
+      background-color: black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 85%;
+    }
+  }
+}
