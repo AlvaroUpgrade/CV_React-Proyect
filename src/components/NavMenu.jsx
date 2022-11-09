@@ -14,10 +14,12 @@ const NavMenu = ({ personalData }) => {
         </h2>
       </div>
       <div className="options">
+        <button onClick={() => setArticle("About")}>About</button>
         <button onClick={() => setArticle("Education")}>Education</button>
         <button onClick={() => setArticle("Experience")}>Experience</button>
-        <button onClick={() => setArticle("Habilities")}>Habilities</button>
-        <button onClick={() => setArticle("Languages")}>Languages</button>
+        <button onClick={() => setArticle("HabilitiesAndLanguages")}>
+          Habilities & Languages
+        </button>
       </div>
     </div>
   );

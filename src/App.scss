@@ -41,9 +41,10 @@ body {
 
     article {
       display: flex;
-      align-items: center;
       justify-content: center;
-      width: 75%;
+      align-items: center;
+      width: 100%;
+      border: 2px solid red;
     }
   }
 }

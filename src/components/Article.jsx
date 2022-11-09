@@ -3,8 +3,7 @@ import { Context } from "../shared/Contexts/Context";
 import About from "./About";
 import Education from "./Education";
 import Experience from "./Experience";
-import Habilities from "./Habilities";
-import Languages from "./Languages";
+import HabilitiesAndLanguages from "./HabilitiesAndLanguages";
 
 const Article = () => {
   const { article } = useContext(Context);
@@ -13,8 +12,7 @@ const Article = () => {
       {article === "About" && <About />}
       {article === "Education" && <Education />}
       {article === "Experience" && <Experience />}
-      {article === "Habilities" && <Habilities />}
-      {article === "Languages" && <Languages />}
+      {article === "HabilitiesAndLanguages" && <HabilitiesAndLanguages />}
     </div>
   );
 };

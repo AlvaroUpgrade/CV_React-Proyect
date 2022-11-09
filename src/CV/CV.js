@@ -30,14 +30,14 @@ export const CV = {
       name: "Prácticas de Grado",
       date: "2022 - March to June",
       where: "Inetum",
-      description: "Microservices formation and development",
+      description: "Microservices formation and development in Java",
     },
     {
       name: "CEO",
       date: "01/01/2000 – 28/02/2012",
       where: "Stark Industries",
       description:
-        "Manage the company, which is a multi-billion dollar multinational corporation that develops and manufactures advanced weapon and defense technologies. The company manufactures the armor worn by Iron Man and War Machine.",
+        "Manage the company, which is a multi-billion dollar multinational corporation that develops and manufactures advanced weapon and defense technologies.",
     },
   ],
 

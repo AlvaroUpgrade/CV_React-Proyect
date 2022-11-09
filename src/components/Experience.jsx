@@ -1,9 +1,27 @@
-import React from 'react'
+import React, { useContext } from "react";
+import { Context } from "../shared/Contexts/Context";
+import "./Experience.scss";
 
 const Experience = () => {
-  return (
-    <div>Experience</div>
-  )
-}
+  const { experience } = useContext(Context);
 
-export default Experience
+  return (
+    <div>
+      <h2>Experience</h2>
+      <div className="experience-cards">
+        {experience.map((items) => {
+          return (
+            <div className="experience-cards-eachCard">
+              <h1>{items.name}</h1>
+              <h3>{items.where}</h3>
+              <p>{items.description}</p>
+              <h5>{items.date}</h5>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
+};
+
+export default Experience;

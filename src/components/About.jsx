@@ -1,27 +1,15 @@
-import React, { useState } from "react";
+import React, { useContext } from "react";
+import { Context } from "../shared/Contexts/Context";
 import "./About.scss";
 
-const About = ({ about }) => {
-  const [showAbout, setShowAbout] = useState(true);
+const About = () => {
+  const { personalData } = useContext(Context);
 
   return (
-    <div className="aboutData">
-      <button onClick={() => setShowAbout(!showAbout)}>
-        {showAbout ? "Ocultar" : "Mostrar"} About Section
-      </button>
-      <div className="card">
-        {showAbout ? (
-          <>
-            <h2>Profile</h2>
-            <p> {about} </p>
-          </>
-        ) : (
-          <>
-            <p>The About Section is hidden</p>
-          </>
-        )}
+    <div className="aboutCard">
+        <h2>About Me</h2>
+        <p> {personalData.aboutMe} </p>
       </div>
-    </div>
   );
 };
 

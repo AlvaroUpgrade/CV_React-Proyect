@@ -12,20 +12,23 @@ import { Context } from "./shared/Contexts/Context";
 import { useState } from "react";
 import Article from "./components/Article";
 
-const {
-  personalData,
-  education,
-  experience,
-  languages,
-  habilities,
-  volunteer,
-} = CV;
+const { personalData, education, experience, languages, habilities } = CV;
 
 function App() {
   const [article, setArticle] = useState("About");
 
   return (
-    <Context.Provider value={{ article, setArticle }}>
+    <Context.Provider
+      value={{
+        article,
+        setArticle,
+        personalData,
+        education,
+        experience,
+        languages,
+        habilities,
+      }}
+    >
       <div className="App">
         <header>
           <nav>
@@ -40,7 +43,6 @@ function App() {
             <Article />
           </article>
         </main>
-        <footer>footer</footer>
 
         {/* <PersonalData personalData={personalData} />
       <About about={personalData.aboutMe} />
