@@ -11,7 +11,7 @@ const Experience = () => {
       <div className="experience-cards">
         {experience.map((items) => {
           return (
-            <div className="experience-cards-eachCard">
+            <div key={items.name} className="experience-cards-eachCard">
               <h1>{items.name}</h1>
               <h3>{items.where}</h3>
               <p>{items.description}</p>

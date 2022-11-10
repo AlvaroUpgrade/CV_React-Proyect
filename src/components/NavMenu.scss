@@ -35,10 +35,12 @@
 
     button {
       font-size: 15px;
-      color: rgba(255, 255, 255, 0.3);
-      background: transparent;
-      padding: 15px;
-      border: 2px solid rgba(0, 0, 0, 0.637);
+      height: 80px;
+      width: 150px;
+      color: white;
+      background-color: cornflowerblue;
+      background-color: rgb(68, 112, 145);
+      border: 3px solid rgba(255, 255, 255, 0.452);
       border-radius: 10px;
       text-shadow: 0 0 15px rgba(255, 255, 255, 0.5),
         0 0 10px rgba(255, 255, 255, 0.5);

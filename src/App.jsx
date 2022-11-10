@@ -1,15 +1,11 @@
-// import { useState } from "react";
+import { useState } from "react";
 import "./App.scss";
 
 import NavMenu from "./components/NavMenu";
 import PersonalData from "./components/PersonalData";
-import About from "./components/About";
-import Education from "./components/Education";
-import Experience from "./components/Experience";
 
 import { CV } from "./CV/CV";
 import { Context } from "./shared/Contexts/Context";
-import { useState } from "react";
 import Article from "./components/Article";
 
 const { personalData, education, experience, languages, habilities } = CV;

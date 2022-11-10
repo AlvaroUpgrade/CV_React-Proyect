@@ -11,10 +11,10 @@ const Education = () => {
       <div className="education-cards">
         {education.map((items) => {
           return (
-            <div className="education-cards-eachCard">
+            <div key={items.name} className="education-cards-eachCard">
               <h3>{items.name}</h3>
               <p>
-                {items.date} - {items.where}
+                {items.date} / {items.where}
               </p>
             </div>
           );

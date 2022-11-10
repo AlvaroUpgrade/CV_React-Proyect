@@ -14,7 +14,7 @@ export const CV = {
 
   education: [
     {
-      name: "Bachillerato",
+      name: "Bachillerato Ciencias Sociales",
       date: "2018-2020",
       where: "Madrid",
     },
