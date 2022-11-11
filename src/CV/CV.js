@@ -8,6 +8,7 @@ export const CV = {
     phone: "(+34) 66666666",
     image: "/assets/profilePhoto.jpg",
     gitHub: "https://github.com/tonystark",
+    linkedIn: "https://www.linkedin.com/in/alvaro-ruiz-navarro",
     aboutMe:
       "Técnico superior en Desarrollo de Aplicaciones Multiplataforma (D.A.M). Programador Junior con grandes motivaciones para aprender sobre todo tipo de tecnologías.",
   },
